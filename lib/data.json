@@ -1,0 +1,17 @@
+[
+  { "uri": "images/bun-bottom.png", "label": "Naudanlihapihvi", "cost": 1.0 },
+  { "uri": "images/cheese.png", "label": "Juusto", "cost": 1.0 },
+  { "uri": "images/ketchup.png", "label": "Ketsuppi", "cost": 1.0 },
+  { "uri": "images/mustard.png", "label": "Sinappi", "cost": 1.0 },
+  { "uri": "images/beef.png", "label": "Naudanlihapihvi", "cost": 1.0 },
+  { "uri": "images/tomato.png", "label": "Tomaatti", "cost": 1.0 },
+  { "uri": "images/bun-top.png", "label": "Naudanlihapihvi", "cost": 1.0 },
+  { "uri": "images/pickles.png", "label": "Suolakurkku", "cost": 1.0 },
+  {
+    "uri": "images/bun-bottom-roast.png",
+    "label": "Naudanlihapihvi",
+    "cost": 1.0
+  },
+  { "uri": "images/salad.png", "label": "Salaatti", "cost": 1.0 },
+  { "uri": "images/red-onion.png", "label": "Punasipuli", "cost": 1.0 }
+]
