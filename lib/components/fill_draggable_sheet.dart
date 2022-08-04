@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:thesis_s2022/enums/vegetables.dart';
+import 'package:thesis_s2022/states/burger_state.dart';
 
 class FillDraggableSheet extends StatelessWidget {
   final Function onItemPress;
@@ -61,13 +63,18 @@ class VegetableCardList extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                    onPressed: () => print, icon: const Icon(Icons.remove)),
+                    onPressed: () => context
+                        .read<BurgerState>()
+                        .addVegetable(Vegetables.values[index]),
+                    icon: const Icon(Icons.remove)),
                 const Padding(
                   padding: EdgeInsets.all(16.0),
                   child: Text("0"),
                 ),
                 IconButton(
-                  onPressed: () => print,
+                  onPressed: () => context
+                      .read<BurgerState>()
+                      .addVegetable(Vegetables.values[index]),
                   icon: const Icon(Icons.add),
                 )
               ],

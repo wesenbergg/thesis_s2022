@@ -14,7 +14,7 @@ class _BurgerBuilderScreenState extends State<BurgerBuilderScreen> {
   double _imageLayerOffset = 50.0;
   List<BurgerItem> lista = [];
 
-  void addFill(BurgerItem item) {
+  void addFill(BurgerItem item, [int count = 1]) {
     setState(() {
       lista.add(item);
     });
@@ -38,7 +38,7 @@ class _BurgerBuilderScreenState extends State<BurgerBuilderScreen> {
               }),
               child: Stack(
                 alignment: AlignmentDirectional.bottomCenter,
-                children: BurgerController(_imageLayerOffset).showList(),
+                children: BurgerController(_imageLayerOffset).showList(context),
               ),
             ),
             FillDraggableSheet(onItemPress: addFill),
