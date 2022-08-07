@@ -7,13 +7,16 @@ import 'package:thesis_s2022/enums/vegetables.dart';
 class BurgerState with ChangeNotifier, DiagnosticableTreeMixin {
   final Burger _burger = Burger();
 
-  void addVegetable(Vegetables vege) {
-    _burger.vegetables.add(vege);
+  void addVegetable(Vegetables vege, {int amount = 0}) {
+    BurgerItem item =
+        _burger.vegetables.putIfAbsent(vege.name, () => vege.item);
+    item.amount = amount;
     notifyListeners();
   }
 
-  void addSauce(Sauces sauce) {
-    _burger.sauces.add(sauce);
+  void addSauce(Sauces sauce, {int amount = 1}) {
+    _burger.sauces.putIfAbsent(sauce.name, () => sauce.item);
+    notifyListeners();
   }
 
   List<BurgerItem> getBuildedBurger() {

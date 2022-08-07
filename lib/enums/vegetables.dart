@@ -15,7 +15,7 @@ extension ExtVegetables on Vegetables {
       case Vegetables.salad:
         return bSalad;
       default:
-        return const BurgerItem.defaultItem();
+        return BurgerItem.defaultItem();
     }
   }
 }

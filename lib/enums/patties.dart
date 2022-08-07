@@ -6,11 +6,11 @@ extension ExtPatties on Patties {
   BurgerItem get item {
     switch (this) {
       case Patties.beef:
-        return const BurgerItem("images/beef.png", "Naudanlihapihvi", 1.0);
+        return BurgerItem("images/beef.png", "Naudanlihapihvi", 1.0);
       case Patties.chicken:
-        return const BurgerItem("images/beef.png", "Naudanlihapihvi", 1.0);
+        return BurgerItem("images/beef.png", "Naudanlihapihvi", 1.0);
       default:
-        return const BurgerItem.defaultItem();
+        return BurgerItem.defaultItem();
     }
   }
 }

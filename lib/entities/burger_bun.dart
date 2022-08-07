@@ -5,6 +5,6 @@ class BurgerBun {
   final BurgerItem bottomBun;
 
   const BurgerBun(this.topBun, this.bottomBun);
-  const BurgerBun.defaultBurgerBun()
-      : this(const BurgerItem.defaultItem(), const BurgerItem.defaultItem());
+  BurgerBun.defaultBurgerBun()
+      : this(BurgerItem.defaultItem(), BurgerItem.defaultItem());
 }

@@ -11,7 +11,7 @@ extension ExtBuns on Buns {
       case Buns.roast:
         return normalBurgerBun;
       default:
-        return const BurgerBun.defaultBurgerBun();
+        return BurgerBun.defaultBurgerBun();
     }
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:thesis_s2022/screens/burger_builder_screen.dart';
 import 'package:thesis_s2022/states/burger_state.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Burger Builder',
-      theme: ThemeData(
+      theme: ThemeData.light().copyWith(
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -34,9 +35,17 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.red,
+        // primarySwatch: Colors.red,
+        // typography: Typography.material2018(),
+        // varelaRound
+        // meriendaOne
+        textTheme: Theme.of(context).textTheme.apply(
+              fontFamily: GoogleFonts.varelaRound().fontFamily,
+              bodyColor: Colors.brown[700],
+            ),
       ),
       home: const BurgerBuilderScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
