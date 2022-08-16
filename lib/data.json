@@ -12,6 +12,6 @@
     "label": "Naudanlihapihvi",
     "cost": 1.0
   },
-  { "uri": "images/salad.png", "label": "Salaatti", "cost": 1.0 },
+  { "uri": "images/lettuce.png", "label": "Salaatti", "cost": 1.0 },
   { "uri": "images/red-onion.png", "label": "Punasipuli", "cost": 1.0 }
 ]

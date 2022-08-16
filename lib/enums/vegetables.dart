@@ -1,7 +1,7 @@
 import 'package:thesis_s2022/constants/burger_item_constants.dart';
 import 'package:thesis_s2022/entities/burger_item.dart';
 
-enum Vegetables { salad, tomato, redOnion, pickles }
+enum Vegetables { lettuce, tomato, redOnion, pickles }
 
 extension ExtVegetables on Vegetables {
   BurgerItem get item {
@@ -12,7 +12,7 @@ extension ExtVegetables on Vegetables {
         return bPickles;
       case Vegetables.redOnion:
         return bRedOnion;
-      case Vegetables.salad:
+      case Vegetables.lettuce:
         return bSalad;
       default:
         return BurgerItem.defaultItem();
