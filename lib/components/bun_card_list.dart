@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thesis_s2022/constants/style_constants.dart';
 import 'package:thesis_s2022/enums/buns.dart';
 import 'package:thesis_s2022/states/burger_state.dart';
 import 'package:provider/provider.dart';
@@ -44,7 +45,7 @@ class _BunCardListState extends State<BunCardList> {
               padding: const EdgeInsets.all(24.0),
               child: CircleAvatar(
                 maxRadius: 100,
-                backgroundColor: Colors.amber,
+                backgroundColor: primary,
                 child: Image.asset(Buns.values[index].item.bottomBun.uri),
               ),
             ),
@@ -62,16 +63,6 @@ class _BunCardListState extends State<BunCardList> {
               icon: const Icon(Icons.navigate_next),
             )
           ],
-        ),
-        Switch(
-          value: flame,
-          onChanged: (v) {
-            setState(
-              () {
-                flame = v;
-              },
-            );
-          },
         ),
       ],
     );

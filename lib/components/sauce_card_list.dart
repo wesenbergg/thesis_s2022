@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thesis_s2022/constants/style_constants.dart';
 import 'package:thesis_s2022/enums/sauces.dart';
 import 'package:thesis_s2022/states/burger_state.dart';
 import 'package:provider/provider.dart';
@@ -15,13 +16,13 @@ class SauceCardList extends StatelessWidget {
       child: GridView.builder(
         gridDelegate:
             const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-        padding: EdgeInsets.zero,
+        padding: sA0,
         physics: const ClampingScrollPhysics(),
         itemCount: Sauces.values.length,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
           return Card(
-            margin: EdgeInsets.zero,
+            margin: sA0,
             elevation: 0,
             child: GridTile(
               header: Text(
@@ -39,7 +40,7 @@ class SauceCardList extends StatelessWidget {
                           .addSauce(Sauces.values[index]),
                       icon: const Icon(Icons.remove)),
                   const Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: sA2,
                     child: Text("0"),
                   ),
                   IconButton(
@@ -51,10 +52,10 @@ class SauceCardList extends StatelessWidget {
                 ],
               ),
               child: Padding(
-                padding: const EdgeInsets.all(48.0),
+                padding: sA6,
                 child: CircleAvatar(
                   maxRadius: 100,
-                  backgroundColor: Colors.amber,
+                  backgroundColor: primary,
                   child: Image.asset(Sauces.values[index].item.uri),
                 ),
               ),

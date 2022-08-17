@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:thesis_s2022/constants/style_constants.dart';
 import 'package:thesis_s2022/screens/burger_builder_screen.dart';
 import 'package:thesis_s2022/states/burger_state.dart';
 
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Burger Builder',
+      title: appTitleText,
       theme: ThemeData.light().copyWith(
         // This is the theme of your application.
         //
@@ -40,8 +40,8 @@ class MyApp extends StatelessWidget {
         // varelaRound
         // meriendaOne
         textTheme: Theme.of(context).textTheme.apply(
-              fontFamily: GoogleFonts.varelaRound().fontFamily,
-              bodyColor: Colors.brown[700],
+              fontFamily: defaultFontFamily,
+              bodyColor: bodyColor,
             ),
       ),
       home: const BurgerBuilderScreen(),

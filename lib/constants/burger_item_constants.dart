@@ -53,3 +53,11 @@ BurgerItem bTomato = BurgerItem("images/tomato.png", "Tomaatti", 0.50);
 BurgerItem bPickles = BurgerItem("images/pickles.png", "Suolakurkku", 0.20);
 BurgerItem bSalad = BurgerItem("images/lettuce.png", "Salaatti", 0.20);
 BurgerItem bRedOnion = BurgerItem("images/red-onion.png", "Punasipuli", 0.10);
+
+// meal
+BurgerItem sFries = BurgerItem("images/fries.png", "Ranet", 0.10);
+BurgerItem sSalad = BurgerItem("images/salad.png", "Salaatti", 0.10);
+BurgerItem dSlush = BurgerItem("images/slush.png", "Hilejuoma", 0.10);
+BurgerItem dJuice = BurgerItem("images/juice.png", "Mehu", 0.10);
+BurgerItem dSoftDrink = BurgerItem("images/lemonade.png", "Limu", 0.10);
+BurgerItem dMilkshake = BurgerItem("images/milkshake.png", "Limu", 0.10);
