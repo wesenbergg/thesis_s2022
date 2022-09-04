@@ -46,9 +46,7 @@ class _BurgerBuilderScreenState extends State<BurgerBuilderScreen> {
           icon: closeIcon,
           color: bodyColor,
           iconSize: titleSize,
-          onPressed: () {
-            /// TODO: Add close button
-          },
+          onPressed: () {},
         ),
         title: appTitle,
       ),
