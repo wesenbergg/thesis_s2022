@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:thesis_s2022/components/bun_card_list.dart';
 import 'package:thesis_s2022/components/filling_list.dart';
 import 'package:thesis_s2022/components/meal_card_list.dart';
-import 'package:thesis_s2022/components/vegetable_card_list.dart';
 
 /// Common text & layout
 const String appTitleText = 'Magic Burger ✨';
